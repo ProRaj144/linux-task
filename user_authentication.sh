@@ -13,7 +13,13 @@ else
     exit 1
 fi
 
-# Tax Calculation
+if [[ $username == "Developer" && $password == "Fireflink@123" ]]; then 
+    echo "Authentication Successful"
+else
+    echo "Authentication Unsuccessful"
+    exit 1
+fi
+
 echo "Enter Salary:"
 read salary
 
@@ -26,7 +32,6 @@ else
 fi
 echo "Your Tax is: $tax"
 
-# Age Classification
 echo "Enter Age:"
 read age
 
