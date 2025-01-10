@@ -40,7 +40,7 @@ fi
 if (( age > 60 )); then
     echo "You are Oldage"
 elif (( age < 13 )); then
-    echo "You are a Child"
+    echo "You are the Child"
 fi
 if (( salary == 15000 )); then
     tax=$((salary * 2 / 100))
