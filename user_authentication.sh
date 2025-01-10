@@ -1,19 +1,12 @@
 #!/bin/bash
 
-# User Authentication
+
 echo "Enter Username:"
 read username
 echo "Enter Password:"
 read -s password
 
 if [[ $username == "admin" && $password == "xyz123" ]]; then
-    echo "Authentication Successful"
-else
-    echo "Authentication Unsuccessful"
-    exit 1
-fi
-
-if [[ $username == "Developer" && $password == "Fireflink@123" ]]; then 
     echo "Authentication Successful"
 else
     echo "Authentication Unsuccessful"
@@ -45,7 +38,7 @@ fi
 if (( age > 60 )); then
     echo "You are Oldage"
 elif (( age < 13 )); then
-    echo "You are the Child"
+    echo "You are a Child"
 fi
 if (( salary == 15000 )); then
     tax=$((salary * 2 / 100))
