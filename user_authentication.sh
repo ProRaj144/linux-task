@@ -42,3 +42,8 @@ if (( age > 60 )); then
 elif (( age < 13 )); then
     echo "You are a Child"
 fi
+if (( salary == 15000 )); then
+    tax=$((salary * 2 / 100))
+elif (( salary > 15000 && salary <= 30000 )); then
+    tax=$((salary * 5 / 100))
+fi
